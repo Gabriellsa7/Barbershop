@@ -1,0 +1,322 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px;
+}
+
+.logo-home img {
+    width: 80px;
+}
+
+.nav-home {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-home {
+    padding: 16px 24px;
+}
+
+.initial {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 20px;
+
+    button {
+        padding: 10px 48px;
+        border-radius: 5px;
+        background: $bg-button;
+
+        color: $text-btn-color;
+        font-family: 'Sora', sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+.entrada-home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.entrada-home img {
+    width: 320px;
+}
+
+.texts-entrada {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: $text-colors-primary;
+}
+
+.title-home {
+    color: $text-colors-primary;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 16px;
+}
+
+.cards-main-home {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 32px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.card {
+    margin-top: 32px;
+    width: 149px;
+    height: 165px;
+    border-radius: 8px;
+    color: $text-colors-primary;
+    background: $bg-cards-primary;
+    position: relative;
+}
+
+.elemento-fora {
+    position: absolute; /* Define a posição absoluta para que o elemento seja posicionado em relação à janela do navegador. */
+    top: -20px; /* Define a distância que você deseja do topo da div. */
+    left: 38%; /* Você pode ajustar a posição horizontal conforme necessário. */
+    transform: translateX(-50%); /* Centraliza horizontalmente o elemento em relação à div pai. */
+    width: 77px;
+    height: 79px;
+    background-color: $bg-mini-cards;
+}
+
+.mini-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 13px;
+    width: 77px;
+    height: 79px;
+    border-radius: 6px;
+}
+
+.mini-card img {
+    width: 50px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 13px;
+    position: absolute;
+    bottom: 0;
+}
+
+.preco {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.middle {
+    color: $text-colors-primary;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 32px;
+}
+
+.title-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom:24px;
+}
+
+.title-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 4px;
+    background: $bg-cards-primary;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 0 16px 16px;
+
+    button {
+        padding: 16px 24px;
+        border-radius: 6px;
+        background: $bg-button; 
+        color: $text-btn-color;
+    
+        text-align: center;
+        font-family: 'Sora', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 85%; /* 12.389px */
+    }
+}
+
+.title-bottom img {
+    width: 28px;
+}
+
+.down {
+    color: $text-colors-primary;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 32px;
+
+   
+}
+
+.texts-down {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 32px;
+
+    h1 {
+        font-family: 'Sora', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    p {
+        color: $text-colors-terciary;
+        font-family: 'Sora', sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.button-down {
+    display: flex;
+    gap: 16px;
+    padding: 24px 32px;
+    border-radius: 8px;
+    border: 1px solid #FB7B05;
+
+    img {
+        width: 40px;
+    }
+
+    a {
+        color: $text-colors-primary;
+    }
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: $text-copy-color;
+        text-align: center;
+        font-family: 'Sora',sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 85%; /* 10.2px */
+    }
+}
+
+.bar {
+    background: #17181C;
+    padding: 8px 16px 16px 16px;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    width: 100%;
+}
+
+.bar-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home {
+    width: 44px;
+}
+
+#agenda {
+    width: 20px;
+}
+
+#local {
+    width: 20px;
+}
+
+#profile {
+    width: 20px;
+}
+
+.nav-item {
+    display: none;
+    background: $bg-cards-primary;
+    padding-bottom: 16px;
+}
+
+.nav-item a {
+    color: $text-colors-primary;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: block;
+}
+.mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+}
+.mobile-menu .login-button {
+    display: block;
+    padding: 1rem 2rem;
+}
+.mobile-menu .login-button button {
+    width: 100%;
+}
+.open {
+    display: block;
+}
+
+

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./src/partials/colors";
+@import "./src/partials/index";
+@import "./src/partials/login";
+@import "./src/partials/layout";
+@import "./src/partials/_profile.scss";
+
+body {
+    font-family: 'Sora', sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    background: $bg-color ;
+}
+
+button {
+    font-family: 'Sora', sans-serif;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $text-colors-primary;
+}
+
+img {
+    width: 100%;
+}
